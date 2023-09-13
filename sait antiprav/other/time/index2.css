@@ -1,0 +1,817 @@
+*{
+	box-sizing:border-box
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+html{
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	background-image: url(img/bg.jpg);
+	background-size: 130%;
+
+	background-repeat: no-repeat;
+	background-position-x: left;
+}
+
+body {
+	min-width: 1170px;    
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	transition: 0.8s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mask .img{
+	width: 70px;
+	position: absolute;
+	top: 350px;
+	z-index: 100;
+	transition: 0.8s;
+}
+
+.loader{
+	width: 90px;
+	height: 90px;
+	border: 10px solid #DF9A2B;
+	border-radius: 50%;
+	border-left-color: black;
+	animation: loader 1.3s linear infinite;
+}
+
+.hide{
+	opacity: 0;
+}
+
+@keyframes loader {
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+.back_to_top{
+	background-color: #e9ecef;
+	border-radius: 0.25rem;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	border: solid 1px #e9ecef;
+	display: none;
+}
+
+.back_to_top::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 7px;
+	height: 7px;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-top: 4px solid #adb5bd;
+	border-left: 4px solid #adb5bd;
+}
+.back_to_top:hover:before {
+	border-top: 4px solid #54595F;
+	border-left: 4px solid #54595F;
+}
+
+.line {
+	background-color: #FFFFFF08;
+	border-bottom: solid 1px #FFFFFF08;
+}
+.line2 {
+	background-color: #EEF0F4;
+	border-bottom: solid 1.4px #EEF0F4;
+	margin-left: 138px;
+	margin-right: 138px;
+}
+.line3 {
+	background-color: #F2F4F7;
+	border-bottom: solid 1.4px #F2F4F7;
+	margin-top: 670px;
+	margin-left: 138px;
+	margin-right: 138px;
+}
+.line4{
+	margin-left: 138px;
+	margin-right: 138px;
+	background-color: #3B4B67;
+	border-bottom: solid 1px #3B4B67;
+	margin-top: 860px;
+}
+#circle {
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	background: red;
+}
+
+header{
+	animation-duration: 6s;
+}
+
+header .logoname a{
+	text-decoration: none;
+	font-weight: 600;
+	margin-top: -14px;
+	font-size: 38px;
+	color: #DF9A2B;
+	margin-left: 20%;
+	position: absolute;
+}
+header img{
+	margin-left: 12%;
+	margin-top: -20px;
+	position: absolute;
+	width: 80px;
+}
+header .head {
+	font-family: 'Open Sans', sans-serif;
+	cursor: pointer;
+	margin-top: 28px;
+	margin-left: 35%;
+	margin-right: 11%;
+	margin-bottom: 20px;
+	display: flex;	
+	justify-content: space-between;
+}
+
+header .head h3 a{
+	margin-left: 0px;
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+}
+
+header .head h3 a:hover {
+	font-size: 16px; 
+	font-weight: 500;
+	color: #DF9A2B;
+}
+
+header .head .home h3 a{
+	color: #DF9A2B;
+}
+
+header .head .Appointment h3 a{
+	margin-left: 50px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: 1s background-color;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: -15px;
+	padding: 15px;
+	color: white;
+	display: inline-block;
+	border: solid 0px #DF9A2B;
+	background-color: #DF9A2B;
+}
+header .head .Appointment h3 a:hover{
+	transition: 1s background-color;
+	font-weight: 600;
+	color: #DF9A2B;
+	background-color: white;
+}
+
+.bgmini{
+
+	margin-top: 100px;
+	margin-left: 700px;
+	z-index: -10;
+	position: absolute;
+}
+
+.bgmini img{
+	border: solid 0.1px white;
+	width: 90%;
+}
+
+
+.AboutMe{
+	color: white;
+	margin-left: 12%;
+	margin-top: 200px;
+	width: 470px;
+	height: 40px;
+	font-weight: 100;
+}
+.AboutMe h3{
+	font-weight: 400;
+}
+.AboutMe .name{
+	background-color: none;
+	font-weight: 700;
+	font-size: 38px;
+	animation-duration: 1s;
+}
+.AboutMe .osebe{
+
+	font-size: 21px;
+	animation-duration: 1s;
+}
+.AboutMe .osebe .underline{
+	text-decoration: underline;
+}
+
+.AboutMe .ScrolltoAppointment h2 a{
+	animation-duration: 1s;
+	color: white;
+	text-decoration: none;
+	border: solid 0px;
+	padding: 14px;
+	cursor: pointer;
+	font-weight: 400;
+	font-size: 17px;
+	background-color: #DF9A2B;
+	border-radius: 5px 5px 5px 5px;
+	transition: 1s background-color;
+}
+.AboutMe .ScrolltoAppointment h2 a:hover{
+	background-color: #1d2235;
+	transition: 1s background-color;
+}
+.advice{
+	text-align: center;
+	font-size: 15px;
+	margin-top: 1100px;
+	padding-right: 400px;
+	padding-left: 400px;
+}
+.advice h1{
+	color: #202a3b;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.points{
+	margin-top: 100px;
+}
+
+.Ido{
+
+	margin-bottom: 170px;
+	text-align: center;
+
+}
+
+.Ido img{
+	max-width: 57px;
+	max-height: 57px;
+}
+.Ido .Economicoffenses{
+	width: 40px;
+}
+.Ido a{
+	text-decoration: none;
+}
+.Ido h2{
+	font-weight: 600;
+	color: #202a3b;
+	font-size: 20px;
+}
+.Ido p{
+	color: #7A7A7A;
+}
+.Ido .points{
+	margin-left: 50px;
+	margin-right: 50px;
+	width: 330px;
+	height: 40px;
+	display: inline-block;
+}
+.Ido .Economicoffenses{
+	width: 48px;
+}
+
+
+.arrow-3 {
+    color: #DF9A2B;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px; 
+    display: inline-block; 
+    margin: 20px;
+}
+.arrow-3 .arrow-3-icon {
+    position: relative;
+    top: -1px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+.arrow-3 .arrow-3-iconcircle {
+    transition: stroke-dashoffset .3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+}
+.arrow-3:hover .arrow-3-icon {
+    transform: translate3d(5px, 0, 0);
+}
+.arrow-3:hover .arrow-3-iconcircle {
+    stroke-dashoffset: 0;
+}
+
+.workexperienceall {
+	margin-top: 250px;
+}
+
+.workexperienceall img{
+	width: 600px;
+}
+.workexperienceall .workexperience {
+	margin-left: 135px;
+}
+.workexperienceall .workexperiencetext{
+	margin-top: -418px ;
+	margin-left: 840px;
+	width: 500px;
+}
+.workexperienceall .workexperiencetext .Aboutmyexp{
+	color: #202a3b;
+	font-size: 16px;
+	font-weight: 500;
+}
+.workexperienceall .workexperiencetext h2{
+	color: #202a3b;
+	font-size: 26px;
+	font-weight: 600;
+}
+.workexperienceall .workexperiencetext .text2{
+	color: #7A7A7A;
+	font-size: 16.4px;
+	font-weight: 500;
+}
+
+.workexperienceall .workexperiencetext a{
+	text-decoration: none;
+	color: white;
+}
+
+.workexperienceall .workexperiencetext .MoreAboutUs{
+	transition: 1s background-color;	
+	cursor: pointer;
+	margin-top: 40px;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	width: 120px;
+	text-align: center;
+	border: solid 1px none;
+	background-color: #DF9A2B;
+
+}
+.workexperienceall .workexperiencetext .MoreAboutUs:hover{
+	background-color: #202A3B;
+	transition: 1s background-color;
+}
+
+
+.workplanall{
+	margin-bottom: 200px;
+}
+.workplan {
+	margin-top: -150px;
+	margin-left: 657px;
+}
+.workplantext{
+	color: #202a3b;
+	font-size: 16px;
+	font-weight: 500;
+	margin-left: 185px;
+	margin-top: -420px;
+	width: 400px;
+}
+.workplantext .Aboutmyplan{
+	font-weight: 600;
+	color: #202a3b;
+	font-size: 26px;
+	font-weight: 600;
+}
+.workplantext p{
+	color: #202a3b;
+	font-size: 19px;
+	font-weight: 600;
+}
+
+.workplantext img{
+	position: absolute;
+	margin-left: -50px;
+	color: #7A7A7A;
+	font-size: 16px;
+	font-weight: 500;
+}
+.graybg{
+	margin-top: -300px;
+	z-index: -10;
+	position: absolute;
+	height: 800px;
+	width: 115%;
+	background-color: #F2F4F7;
+}
+
+
+.perplebg{
+
+	padding-bottom: 40px;
+	z-index: -10;
+	position: absolute;
+	width: 115%;
+	height: 600px;
+	background-image: url(img/bg1.jpg);
+	background-repeat: no-repeat;
+}
+
+.Tomakeanappointment .Tomakeanappointment1{
+	border-radius: 50%;
+	margin-top: 40px;
+	margin-left: 135px;
+}
+.Tomakeanappointment .Tomakeanappointment2{
+	border-radius: 50%;
+	margin-bottom: -130px;
+	margin-left: -240px;
+}
+
+.Tomakeanappointment h2{
+	width: 500px;
+	height: 60px;
+	margin-top: -300px;
+	margin-left: 830px;
+	color: white;
+	font-size: 30px;
+}
+.Tomakeanappointment h2{
+	width: 500px;
+	height: 60px;
+	margin-top: -400px;
+	margin-left: 830px;
+	color: white;
+	font-size: 30px;
+}
+.Tomakeanappointment .Talktous{
+	font-size: 16px;
+	font-weight: 500;
+}
+.ScrolltoAppointment a{
+	font-size: 17px;
+	font-weight: 400;
+	text-decoration: none;
+	transition: 1s background-color;
+	border-radius: 5px 5px 5px 5px;
+	padding: 15px;
+	color: white;
+	display: inline-block;
+	border: solid 0px #DF9A2B;
+	background-color: #DF9A2B;
+}
+.ScrolltoAppointment a:hover{
+	transition: 1s background-color;
+	font-weight: 400;
+	color: #DF9A2B;
+	background-color: white;
+}
+
+._Samples{
+	margin-top: 600px;
+	margin-left: 200PX;
+	width: 400px;
+}
+._Samples .SamplesName{
+	font-weight: 400;
+	font-size: 16px;
+	color: #202a3b;
+}
+._Samples .WeCanSeeSamples{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	font-weight: 600;
+	font-size: 28px;
+	color: black;
+}
+
+._Samples .moreSamples a{
+	text-decoration: none;
+	transition: 1s background-color;	
+	cursor: pointer;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	width: 190px;
+	text-align: center;
+	border: solid 1px none;
+	background-color: #DF9A2B;
+	color: white;
+}
+
+._Samples .moreSamples a:hover{
+	background-color: #202A3B;
+	transition: 1s background-color;
+}
+
+
+.slideshow-container {
+	animation-duration: 2s;
+	z-index: -5;
+	margin-top: -200px;
+	margin-left: 650px;
+	max-width: 1000px;
+	position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.Slidertext {
+	margin-left: -95px;
+	color: black;
+	font-weight: 600;
+	font-size: 17px;
+	padding: 25px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dotposition{
+	margin-top: -55px;
+	margin-left: 900px;
+}
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #DF9A2B;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+.perplegraybg{
+	margin-top: 80px;
+	z-index: -10;
+	position: absolute;
+	height: 850px;
+	width: 115%;
+	background-color: #F2F4F7;
+}
+.submityourapplication{
+	margin-bottom: 250px;
+}
+.submityourapplication img{
+	margin-left: 200PX;
+	margin-top: 400px;
+}
+.submityourapplication .applicationform{
+	width: 497px;
+	height: 100px;
+	margin-top: -495px;
+	margin-left: 800PX;
+}
+.submityourapplication .applicationform h2 p{
+	margin-bottom: 15px;
+	font-weight: 500;
+	color: #202a3b;
+	font-size: 16px;
+}
+.submityourapplication .applicationform h2{
+	font-size: 30px;
+}
+.submityourapplication .applicationform .shortapplicationform{
+	font-size: 18px;
+}
+.submityourapplication .applicationform .formwidth input{
+	padding-left: 10px;
+	outline:none;
+	font-size: 16px;
+	color: #202a3b;
+	border: solid 1px white;
+	background-color: white;
+	border-radius: 5px;
+	height: 50px;
+	width: 230px;
+	margin-bottom: 10px;
+}
+.submityourapplication .applicationform .formwidth input:focus
+{
+	transition: all .2s ease-in-out;
+	border: solid 1px #DF9A2B;
+}
+.submityourapplication .applicationform .formwidth input:hover
+{
+	transition: all .2s ease-in-out;
+	border: solid 1px #DF9A2B;
+}
+.submityourapplication .applicationform .formwidth .problems{
+	height: 200px;
+	width: 475px;
+	padding-left: 10px;
+	outline:none;
+	font-size: 16px;
+	color: #202a3b;
+	border: solid 1px white;
+	background-color: white;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.submityourapplication .applicationform .formwidth .problems:focus{
+	transition: all .2s ease-in-out;
+	border: solid 1px #DF9A2B;
+}
+.submityourapplication .applicationform .formwidth .problems:hover{
+	transition: all .2s ease-in-out;
+	border: solid 1px #DF9A2B;
+}
+.applicationform .sendAppointment a{
+	text-decoration: none;
+	color: white;
+}
+
+.submityourapplication .applicationform .formwidth button {
+	cursor: pointer;
+	color: white;
+	text-decoration: ;
+	width: 485px;
+	padding: 12px;
+	text-align: center;
+	border: none;
+	background-color: #DF9A2B;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 400;
+	transition: 0.5s ease;
+}
+.submityourapplication .applicationform .formwidth button:hover {
+	background-color: #6610f2;
+}
+
+.blackperplebg{
+	z-index: -10;
+	position: absolute;
+	margin-top: 260px;
+	background-color: #212A3B;
+	width: 115%;
+	height: 500px;
+}
+._contacts{
+	margin-top: 560px;
+	margin-left: 500px;
+}
+
+._contacts img{
+	margin-top: 40px;
+	position: absolute;
+	width: 170px;
+	margin-left: -315px;
+}
+._contacts .saitmapblock{
+	float: left;
+}
+._contacts .PracticeArea{
+	margin-left: 100px;
+	float: left;
+}
+._contacts a{
+	text-decoration: none;
+	color: #626975;
+}
+._contacts a:hover{
+	text-decoration: none;
+	color: #DF9A2B;
+}
+._contacts p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+._contacts .saitmapblock .saitmap{
+	color: white;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+._contacts .PracticeArea .Practice{
+	margin-bottom: 20px;
+	color: white;
+	font-size: 20px;
+}
+.contactsconect a{
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	float: right;
+	margin-left: 70px;
+	margin-right: 138px;
+	margin-top: 30px;
+}
+
+.contactsconect a:hover {
+	color: #DF9A2B;
+	cursor: pointer;
+}
+
+.source{
+	font-size: 15px;
+	margin-top: 30px;
+	position: absolute;
+	margin-left: 136px;
+	text-decoration: none;
+	color: white;
+}
+.gmail a{
+	font-size: 18px;
+	margin-top: 30px;
+	position: absolute;
+	right: 610px;
+	text-decoration: none;
+	color: white;
+}
+
+.gmail a:hover {
+	color: #DF9A2B;
+	cursor: pointer;
+}
+
+.e_mail a{
+	margin-top: 30px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	float: right;
+}
+.e_mail a:hover {
+	color: #DF9A2B;
+	cursor: pointer;
+}

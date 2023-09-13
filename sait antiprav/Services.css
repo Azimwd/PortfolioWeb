@@ -1,0 +1,405 @@
+*{
+	box-sizing:border-box
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+html{
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F2F4F7;
+	z-index: -11;
+}
+body {
+    min-width: 1170px;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	transition: 0.8s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mask .img{
+	width: 70px;
+	position: absolute;
+	top: 350px;
+	z-index: 100;
+	transition: 0.8s;
+}
+
+.loader{
+	width: 90px;
+	height: 90px;
+	border: 10px solid #DF9A2B;
+	border-radius: 50%;
+	border-left-color: black;
+	animation: loader 1.3s linear infinite;
+}
+
+.hide{
+	opacity: 0;
+}
+
+@keyframes loader {
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.back_to_top{
+	background-color: #e9ecef;
+	border-radius: 0.25rem;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 50px;
+	height: 50px;
+	border: solid 1px #e9ecef;
+	display: none;
+}
+
+.back_to_top::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 7px;
+	height: 7px;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-top: 4px solid #adb5bd;
+	border-left: 4px solid #adb5bd;
+}
+.back_to_top:hover:before {
+	border-top: 4px solid #54595F;
+	border-left: 4px solid #54595F;
+}
+
+
+.line {
+	background-color: #FFFFFF08;
+	border-bottom: solid 1px #FFFFFF08;
+}
+
+
+header .logoname{
+	margin-top: -7px;
+	font-size: 28px;
+	color: #DF9A2B;
+	margin-left: 20%;
+	position: absolute;
+}
+header .logoname a{
+	font-weight: 600;
+	text-decoration: none;
+	color: #DF9A2B;
+}
+header img{
+	margin-left: 12%;
+	margin-top: -20px;
+	position: absolute;
+	width: 80px;
+}
+header .head {
+	cursor: pointer;
+	margin-top: 28px;
+	margin-left: 35%;
+	margin-right: 11%;
+	margin-bottom: 20px;
+	display: flex;	
+	justify-content: space-between;
+}
+
+header .head h3 a{
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 16px;
+	color: white;
+}
+
+header .head h3 a:hover {
+	font-weight: 500;
+	color: #DF9A2B;
+}
+
+header .head .Services h3 a{
+	color: #DF9A2B;
+}
+
+header .head .Appointment h3 a{
+	margin-left: 50px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: 1s background-color;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: -15px;
+	padding: 15px;
+	color: white;
+	display: inline-block;
+	border: solid 0px #DF9A2B;
+	background-color: #DF9A2B;
+}
+header .head .Appointment h3 a:hover{
+	transition: 1s background-color;
+	font-weight: 600;
+	color: #DF9A2B;
+	background-color: white;
+}
+.headerperlpebg{
+	margin-top: -30px;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: -10;
+	position: absolute;
+	background-image: url(img/Abutmybg.jpg);
+	width: 1580px;
+	height: 580px;
+}
+.AboutMetext{
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 170px;
+}
+
+
+
+/*General peccata maxima*/
+.leftmenu {
+	background-color: white;
+	margin-left: 11%;
+	margin-top: 400px;
+	width:289px;
+
+}
+
+.leftmenu a{
+	text-decoration: none;
+}
+.leftmenu p{
+	transition: 0.5s background-color;
+	padding: 15px;
+	border-bottom: solid 1px #EEF0F4;
+	font-weight: 600;
+	font-size: 20px;
+	color: black;
+}
+.leftmenu p:hover{
+	background-color: #DF9A2B;
+	transition: 0.5s background-color;
+	color: white;
+}
+.letstalk{
+	text-align: center;
+	background-color: #DF9A2B;
+	margin-left: 11%;
+	margin-top: 30px;
+	height: 400px;
+	width:287px;
+}
+.letstalk img{
+	width: 25%;
+	margin-top: 45px;
+	margin-top: 45px;
+
+}
+.letstalk p{
+	font-weight: 500;
+	color: white;
+	font-size: 26px;
+}
+.letstalk .number a{
+	text-decoration: none;
+}
+
+.letstalk .number{
+	cursor: pointer;
+	transition: 0.5s background-color;
+	background-color: white;
+	border-radius: 30px;
+	padding: 15px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	margin-left: 40px;
+	margin-right: 40px;
+	border: solid 1px white;
+	font-weight: 500;
+	color: #DF9A2B;
+	font-size: 17px;
+}
+.letstalk .number:hover{
+	transition: 0.5s background-color;
+	background-color: #DF9A2B;
+	color: white;
+
+}
+.letstalk .email a{
+	color: white;
+	text-decoration: none;
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+.Servicestext img{
+
+	margin-top: 50px;
+
+}
+.Servicestext{
+	color: #050211;
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 600px;
+	font-size: 18px;
+	width: 730px;
+}
+
+.Servicestext{
+	color: #050211;
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 600px;
+	font-size: 18px;
+	width: 730px;
+}
+.morespan{
+	color: #050211;
+	position: absolute;
+	margin-top: 1160px;
+	margin-right: 11%;
+	margin-left: 11%;
+	font-size: 18px;
+}
+
+.morespan span{
+	color: black;
+	font-weight: 600;
+	font-size: 26px;
+}
+
+.Servicestext span{
+	color: black;
+	font-weight: 600;
+	font-size: 26px;
+}
+.Servicestext .more a{
+	font-size: 21px;
+	text-decoration: none;
+	color: #DF9A2B;
+	transition: 0.8s ease;
+}
+
+.Servicestext .more a:hover{
+	font-size: 23px;
+	transition: 0.8s ease;
+
+}
+.blackperplebg{
+	z-index: -10;
+	position: absolute;
+	margin-top: 430px;
+	background-color: #212A3B;
+	width: 1580px;
+	height: 500px;
+}
+.line4{
+	margin-left: 138px;
+	margin-right: 138px;
+	background-color: #3B4B67;
+	border-bottom: solid 1px #3B4B67;
+	margin-top: 780px;
+}
+._contacts{
+	margin-top: 480px;
+	margin-left: 500px;
+}
+._contacts img{
+	margin-top: 40px;
+	position: absolute;
+	width: 170px;
+	margin-left: -315px;
+}
+._contacts .saitmapblock{
+	float: left;
+}
+._contacts .PracticeArea{
+	margin-left: 100px;
+	float: left;
+}
+._contacts a{
+	text-decoration: none;
+	color: #626975;
+}
+._contacts a:hover{
+	text-decoration: none;
+	color: #DF9A2B;
+}
+._contacts p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+._contacts .saitmapblock .saitmap{
+	color: white;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+._contacts .PracticeArea .Practice{
+	margin-bottom: 20px;
+	color: white;
+	font-size: 20px;
+}
+.contactsconect a{
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	float: right;
+	margin-left: 70px;
+	margin-right: 138px;
+	margin-top: 30px;
+}
+
+.contactsconect a:hover {
+	color: #DF9A2B;
+	cursor: pointer;
+}
+
+.gmail a{
+	font-size: 18px;
+	margin-top: 30px;
+	position: absolute;
+	right: 610px;
+	text-decoration: none;
+	color: white;
+}
+
+.gmail a:hover {
+	color: #DF9A2B;
+	cursor: pointer;
+}
+
+.e_mail a{
+	margin-top: 30px;
+	text-decoration: none;
+	font-size: 18px;
+	color: white;
+	float: right;
+}
+.e_mail a:hover {
+	color: #DF9A2B;
+	cursor: pointer;
+}
+
+.source{
+	font-size: 15px;
+	margin-top: 30px;
+	position: absolute;
+	margin-left: 136px;
+	text-decoration: none;
+	color: white;
+}

@@ -1,0 +1,139 @@
+* {
+    font-family: 'Abel', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html {
+    font-family: 'Abel', sans-serif;
+}
+
+
+.MainSlider {
+    z-index: -10;
+    position: absolute;
+}
+
+header {
+    position: relative;
+    top: 80px;
+}
+
+header .HeaderText {
+    display: flex;
+    justify-content: center;
+
+}
+
+header .HeaderText .main{
+    border-bottom: 2px solid rgb(180,158,143);
+    color: rgb(180,158,143);
+
+}
+
+header .HeaderText div {
+    margin: 0 60px;
+}
+
+header .HeaderText div:hover {
+
+    padding: -10px;
+}
+
+header .HeaderText a {
+    border-bottom: 2px solid rgba(253, 245, 230, 0);
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+header .HeaderText a:hover {
+    border-bottom: 2px solid rgb(180,158,143);
+    color: rgb(180,158,143);
+}
+
+.Logo{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: 160px;
+}
+
+.Logo img{
+    width: 150px;
+}
+
+
+.LogoName{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: 140px;
+}
+
+.LogoName a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.LogoName a:hover{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.LogoText{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: 160px;
+}
+
+.LogoText p{
+    font-size: 22px;
+}
+
+.searc form{
+    position: relative;
+    top: 190px;
+    justify-content: center;
+    display: flex;
+}
+
+.searc form input{
+    cursor: pointer;
+    width: 500px;
+    outline:none;
+    border: rgb(0, 0, 0) 1.5px solid;
+    background:rgba(0, 0, 0, 0);
+}
+
+.searc form input:hover{
+    border: rgb(180,158,143) 1.5px solid;
+}
+
+ .SingIn {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top: 220px;
+}
+
+ .SingIn a {
+
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+ .SingIn a:hover {
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+    border: rgb(180,158,143) 1px solid;
+    text-decoration: none;
+    color: rgb(180,158,143);
+}
+
